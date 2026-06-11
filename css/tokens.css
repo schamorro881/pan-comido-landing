@@ -1,0 +1,79 @@
+:root {
+      /* Color principal de marca */
+  --color-primary: #D8081C;
+  --color-primary-dark: #A8041A;
+  --color-primary-light: rgba(216, 8, 28, 0.1);
+  --color-primary-glow: rgba(216, 8, 28, 0.2);
+
+  /* Colores de rol  Manual de marca Pan Comido */
+  --color-admin: #6abf3f;
+  --color-admin-dark: #559a32;
+  --color-admin-light: rgba(106, 191, 63, 0.15);
+  --color-cocina: #f7d627;
+  --color-cocina-dark: #c9ad1f;
+  --color-cocina-light: rgba(247, 214, 39, 0.15);
+  --color-mozo: #a8041a;
+  --color-mozo-dark: #860314;
+  --color-mozo-light: rgba(168, 4, 26, 0.15);
+  
+  --color-bg: #fdfdfd;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-text: #1a1a1a;
+  --color-text-muted: #5a5a5a;
+  --color-text-light: #888888;
+
+  /* Tipografía */
+  --font-display: "Fredoka", sans-serif;
+  --font-body: "Nunito", sans-serif;
+
+  --text-display: clamp(2.5rem, 5vw, 4rem);
+  --text-h1: clamp(1.8rem, 3.5vw, 2.5rem);
+  --text-h2: clamp(1.25rem, 2.5vw, 1.75rem);
+  --text-h3: 1.15rem;
+  --text-body: 0.95rem;
+  --text-caption: 0.8rem;
+
+  /* Espaciado */
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
+  --space-4xl: 6rem;
+
+  /* Radios Soft UI */
+  --radius-sm: 14px;
+  --radius-md: 24px;
+  --radius-lg: 32px;
+  --radius-full: 9999px;
+
+  /* Sombras Soft UI */
+  --shadow-soft:
+    0 4px 16px rgba(0, 0, 0, 0.04),
+    0 8px 32px rgba(0, 0, 0, 0.05);
+  --shadow-soft-lg:
+    0 8px 24px rgba(0, 0, 0, 0.05),
+    0 16px 48px rgba(0, 0, 0, 0.06);
+  --shadow-soft-hover:
+    0 12px 32px rgba(0, 0, 0, 0.08),
+    0 24px 64px rgba(216, 8, 28, 0.08);
+  --shadow-inset: inset 0 1px 1px rgba(255, 255, 255, 0.8);
+
+  /* Glassmorphism */
+  --glass-bg: rgba(255, 255, 255, 0.7);
+  --glass-bg-strong: rgba(255, 255, 255, 0.85);
+  --glass-border: rgba(255, 255, 255, 0.6);
+  --glass-blur: blur(24px);
+
+  /* Layout */
+  --container-max: 1140px;
+  --nav-height: 72px;
+
+  /* Transiciones */
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+  --transition-slow: 400ms ease;
+}
