@@ -295,6 +295,48 @@
   }
 }
 
+.steps__visual {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: var(--space-md);
+}
+
+.steps__glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 70%;
+  height: 70%;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(circle, rgba(216, 8, 28, 0.15) 0%, transparent 65%);
+  border-radius: 50%;
+  z-index: 1;
+  filter: blur(30px);
+}
+
+.steps__mobile-img {
+  width: 100%;
+  max-width: 280px;
+  max-height: 55vh;
+  object-fit: contain;
+  filter: drop-shadow(0 20px 40px rgba(0,0,0,0.15)) drop-shadow(0 10px 15px rgba(216,8,28,0.1));
+  animation: float 6s ease-in-out infinite;
+  position: relative;
+  z-index: 2;
+}
+
+@media (min-width: 768px) {
+  .steps__visual {
+    margin-top: 0;
+  }
+  .steps__mobile-img {
+    max-width: 380px;
+    max-height: none;
+  }
+}
+
 /* ?? Benefits ?? */
 .benefits__grid {
   display: grid;
