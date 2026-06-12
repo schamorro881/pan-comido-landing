@@ -20,7 +20,7 @@
   <header class="navbar" role="banner">
     <div class="container navbar__inner">
       <a href="#" class="navbar__logo" aria-label="Pan Comido — Inicio">
-        <img src="assets/Logo%20Pan%20Comido.svg" alt="Pan Comido" class="navbar__isotipo" height="56">
+        <img src="assets/Logo%20Pan%20Comido.svg" alt="Pan Comido" class="navbar__isotipo" height="50">
       </a>
 
       <nav class="navbar__nav" aria-label="Navegación principal">
@@ -77,8 +77,11 @@
           </div>
         </div>
 
-        <div class="hero__visual reveal">
-          <img src="assets/hero_shot.png" alt="Mozo utilizando la app de Pan Comido en el restaurante" style="border-radius: var(--radius-lg); box-shadow: var(--shadow-soft-lg); width: 100%; height: auto; object-fit: cover;">
+        <div class="hero__visual reveal" style="position: relative;">
+          <!-- Glow background -->
+          <div style="position: absolute; top: 50%; left: 50%; width: 90%; height: 90%; transform: translate(-50%, -50%); background: radial-gradient(circle, rgba(216, 8, 28, 0.15) 0%, transparent 65%); border-radius: 50%; z-index: 1; filter: blur(40px);"></div>
+          
+          <img src="assets/hero-nobg.png" alt="Mozo utilizando la app de Pan Comido en el restaurante" style="width: 180%; max-width: none; margin-left: -17.5%; height: auto; object-fit: contain; filter: drop-shadow(0 20px 40px rgba(216, 8, 28, 0.25)) drop-shadow(0 10px 20px rgba(0,0,0,0.15)); animation: float 6s ease-in-out infinite; position: relative; z-index: 2; transform-origin: center;">
         </div>
       </div>
     </section>
@@ -95,7 +98,7 @@
         </header>
 
         <div class="features__grid">
-          <article class="feature-card glass-card reveal">
+          <article class="feature-card glass-card reveal reveal-stagger-1">
             <div class="feature-card__icon feature-card__icon--admin">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/>
@@ -106,7 +109,7 @@
             <p class="feature-card__text">Ves el salón en tiempo real: libres, ocupadas y reservadas. Sabés de un vistazo cómo está tu local.</p>
           </article>
 
-          <article class="feature-card glass-card reveal">
+          <article class="feature-card glass-card reveal reveal-stagger-2">
             <div class="feature-card__icon feature-card__icon--cocina">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/>
@@ -116,7 +119,7 @@
             <p class="feature-card__text">La cocina recibe pedidos al instante, sin papelitos perdidos. Cada plato llega con las indicaciones del cliente.</p>
           </article>
 
-          <article class="feature-card glass-card reveal">
+          <article class="feature-card glass-card reveal reveal-stagger-3">
             <div class="feature-card__icon feature-card__icon--mozo">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 7h.01M7 12h.01M7 17h.01M12 7h5M12 12h5M12 17h5"/>
@@ -126,7 +129,7 @@
             <p class="feature-card__text">El cliente escanea, elige y pide desde su mesa. Sin esperar al mozo para ver la carta.</p>
           </article>
 
-          <article class="feature-card glass-card reveal">
+          <article class="feature-card glass-card reveal reveal-stagger-4">
             <div class="feature-card__icon feature-card__icon--admin">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/>
@@ -136,7 +139,7 @@
             <p class="feature-card__text">Cierra la cuenta sin filas en caja. El comensal paga desde su celular cuando termina de comer.</p>
           </article>
 
-          <article class="feature-card glass-card reveal">
+          <article class="feature-card glass-card reveal reveal-stagger-5">
             <div class="feature-card__icon feature-card__icon--cocina">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
@@ -147,7 +150,7 @@
             <p class="feature-card__text">Sabés qué ingredientes te quedan antes de que falten. Evitá quedarte sin platos en pleno servicio.</p>
           </article>
 
-          <article class="feature-card glass-card reveal">
+          <article class="feature-card glass-card reveal reveal-stagger-6">
             <div class="feature-card__icon feature-card__icon--mozo">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/>
@@ -172,7 +175,7 @@
         </header>
 
         <div class="roles__grid">
-          <article class="role-card glass-card role-card--admin reveal">
+          <article class="role-card glass-card role-card--admin reveal reveal-stagger-1">
             <span class="role-card__badge">Gerente</span>
             <h3 class="role-card__title">Control total</h3>
             <p class="role-card__text">Tenés el panorama completo del negocio desde un solo panel.</p>
@@ -183,7 +186,7 @@
             </ul>
           </article>
 
-          <article class="role-card glass-card role-card--cocina reveal">
+          <article class="role-card glass-card role-card--cocina reveal reveal-stagger-2">
             <span class="role-card__badge">Cocina</span>
             <h3 class="role-card__title">Pedidos claros</h3>
             <p class="role-card__text">Recibís comandas ordenadas con tiempos y observaciones del cliente.</p>
@@ -194,7 +197,7 @@
             </ul>
           </article>
 
-          <article class="role-card glass-card role-card--mozo reveal">
+          <article class="role-card glass-card role-card--mozo reveal reveal-stagger-3">
             <span class="role-card__badge">Mozo</span>
             <h3 class="role-card__title">Atención ágil</h3>
             <p class="role-card__text">Gestionás mesas y pedidos sin correr de un lado a otro.</p>
@@ -219,26 +222,31 @@
           </p>
         </header>
 
-        <div class="steps__grid">
-          <div class="steps__connector" aria-hidden="true"></div>
+        <div class="steps__wrapper">
+          <div class="steps__list">
+            <article class="step-card glass-card reveal reveal-stagger-1">
+              <div class="step-card__number">1</div>
+              <h3 class="step-card__title">Configurás tu restaurante</h3>
+              <p class="step-card__text">Cargás tu carta, armás el mapa de mesas y definís los roles de tu equipo.</p>
+            </article>
 
-          <article class="step-card glass-card reveal">
-            <div class="step-card__number">1</div>
-            <h3 class="step-card__title">Configurás tu restaurante</h3>
-            <p class="step-card__text">Cargás tu carta, armás el mapa de mesas y definís los roles de tu equipo.</p>
-          </article>
+            <article class="step-card glass-card reveal reveal-stagger-2">
+              <div class="step-card__number">2</div>
+              <h3 class="step-card__title">Tus clientes escanean el QR</h3>
+              <p class="step-card__text">Desde la mesa ven el menú, eligen platos y hacen pedidos desde el celular.</p>
+            </article>
 
-          <article class="step-card glass-card reveal">
-            <div class="step-card__number">2</div>
-            <h3 class="step-card__title">Tus clientes escanean el QR</h3>
-            <p class="step-card__text">Desde la mesa ven el menú, eligen platos y hacen pedidos desde el celular.</p>
-          </article>
-
-          <article class="step-card glass-card reveal">
-            <div class="step-card__number">3</div>
-            <h3 class="step-card__title">Todo sincronizado al instante</h3>
-            <p class="step-card__text">Cocina, mozos y caja trabajan en tiempo real. Sin demoras ni malentendidos.</p>
-          </article>
+            <article class="step-card glass-card reveal reveal-stagger-3">
+              <div class="step-card__number">3</div>
+              <h3 class="step-card__title">Todo sincronizado al instante</h3>
+              <p class="step-card__text">Cocina, mozos y caja trabajan en tiempo real. Sin demoras ni malentendidos.</p>
+            </article>
+          </div>
+          
+          <div class="steps__visual reveal" style="position: relative; display: flex; align-items: center; justify-content: center;">
+            <div style="position: absolute; top: 50%; left: 50%; width: 70%; height: 70%; transform: translate(-50%, -50%); background: radial-gradient(circle, rgba(216, 8, 28, 0.12) 0%, transparent 60%); border-radius: 50%; z-index: 1; filter: blur(30px);"></div>
+            <img src="assets/mobile_hero-nobg.png" alt="Cliente utilizando la versión móvil de Pan Comido" style="width: 100%; max-width: 380px; height: auto; object-fit: contain; filter: drop-shadow(0 20px 40px rgba(0,0,0,0.15)) drop-shadow(0 10px 15px rgba(216,8,28,0.1)); animation: float 6s ease-in-out infinite; position: relative; z-index: 2;">
+          </div>
         </div>
       </div>
     </section>
@@ -255,7 +263,7 @@
         </header>
 
         <div class="benefits__grid">
-          <div class="benefit-item glass-card reveal">
+          <div class="benefit-item glass-card reveal reveal-stagger-1">
             <div class="benefit-item__icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <polyline points="20 6 9 17 4 12"/>
@@ -267,7 +275,7 @@
             </div>
           </div>
 
-          <div class="benefit-item glass-card reveal">
+          <div class="benefit-item glass-card reveal reveal-stagger-2">
             <div class="benefit-item__icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
@@ -279,7 +287,7 @@
             </div>
           </div>
 
-          <div class="benefit-item glass-card reveal">
+          <div class="benefit-item glass-card reveal reveal-stagger-3">
             <div class="benefit-item__icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
@@ -291,7 +299,7 @@
             </div>
           </div>
 
-          <div class="benefit-item glass-card reveal">
+          <div class="benefit-item glass-card reveal reveal-stagger-4">
             <div class="benefit-item__icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>

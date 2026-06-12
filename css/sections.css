@@ -273,42 +273,25 @@
   position: relative;
 }
 
-.steps__grid {
+.steps__wrapper {
   display: grid;
-  gap: var(--space-lg);
+  gap: var(--space-xl);
   position: relative;
 }
 
-.steps__connector {
-  display: none;
+.steps__list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  position: relative;
+  z-index: 1;
 }
 
 @media (min-width: 768px) {
-  .steps__grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: var(--space-xl);
-  }
-
-  .steps__connector {
-    display: block;
-    position: absolute;
-    top: 48px;
-    left: calc(16.66% + 24px);
-    right: calc(16.66% + 24px);
-    height: 2px;
-    background: linear-gradient(
-      90deg,
-      var(--color-primary) 0%,
-      var(--color-cocina) 50%,
-      var(--color-mozo) 100%
-    );
-    opacity: 0.3;
-    z-index: 0;
-  }
-
-  .step-card {
-    position: relative;
-    z-index: 1;
+  .steps__wrapper {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-3xl);
+    align-items: center;
   }
 }
 
