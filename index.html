@@ -81,7 +81,10 @@
           <!-- Glow background -->
           <div style="position: absolute; top: 50%; left: 50%; width: 90%; height: 90%; transform: translate(-50%, -50%); background: radial-gradient(circle, rgba(216, 8, 28, 0.15) 0%, transparent 65%); border-radius: 50%; z-index: 1; filter: blur(40px);"></div>
           
-          <img src="assets/hero-nobg.png" alt="Mozo utilizando la app de Pan Comido en el restaurante" style="width: 180%; max-width: none; margin-left: -17.5%; height: auto; object-fit: contain; filter: drop-shadow(0 20px 40px rgba(216, 8, 28, 0.25)) drop-shadow(0 10px 20px rgba(0,0,0,0.15)); animation: float 6s ease-in-out infinite; position: relative; z-index: 2; transform-origin: center;">
+          <picture class="hero__picture">
+            <source srcset="assets/hero-nobg.png" media="(min-width: 1024px)">
+            <img src="assets/hero_responsive_mobile.png" alt="Mozo utilizando la app de Pan Comido en el restaurante" class="hero__image">
+          </picture>
         </div>
       </div>
     </section>
@@ -309,7 +312,7 @@
               <h3 class="benefit-item__title">Experiencia moderna para el comensal</h3>
               <p class="benefit-item__text">Menú digital, pedidos y pagos desde el celular. Tu restaurante se siente actual y profesional.</p>
             </div>
-          </div>
+          </article>
         </div>
       </div>
     </section>
