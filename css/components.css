@@ -226,13 +226,13 @@
   border: 1px solid var(--glass-border);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-soft);
-  transition: transform var(--transition-base), box-shadow var(--transition-base);
+  transition: transform var(--transition-base), box-shadow var(--transition-base), border-color var(--transition-base);
 }
 
 .glass-card:hover {
-  border-color: rgba(255, 255, 255, 0.8);
-  box-shadow: var(--shadow-soft-hover);
-  transform: translateY(-3px);
+  border-color: rgba(216, 8, 28, 0.4);
+  box-shadow: var(--shadow-soft-hover), 0 0 15px rgba(216, 8, 28, 0.15);
+  transform: translateY(-4px);
 }
 
 .glass-card svg {
@@ -509,10 +509,16 @@
   box-shadow: 0 0 0 3px var(--color-primary-light);
 }
 
-.form-input.is-invalid,
-.form-textarea.is-invalid {
+.form-input:user-invalid,
+.form-textarea:user-invalid {
   border-color: var(--color-mozo);
   box-shadow: 0 0 0 3px rgba(168, 4, 26, 0.15);
+}
+
+.form-input:user-valid,
+.form-textarea:user-valid {
+  border-color: var(--color-admin);
+  box-shadow: 0 0 0 3px rgba(106, 191, 63, 0.15);
 }
 
 .form-error {

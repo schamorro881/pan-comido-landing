@@ -4,6 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Pan Comido | la gestión gastronómica que conecta mesas, cocina, stock y pagos en tiempo real. Simple, integrado y pensado para restaurantes argentinos.">
+  
+  <!-- Open Graph / Social Media Meta Tags -->
+  <meta property="og:title" content="Pan Comido | Gestión gastronómica simple">
+  <meta property="og:description" content="Pan Comido | la gestión gastronómica que conecta mesas, cocina, stock y pagos en tiempo real. Simple, integrado y pensado para restaurantes argentinos.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://pancomido.com/assets/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
   <title>Pan Comido | Gestión gastronómica simple</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -83,7 +91,7 @@
           
           <picture class="hero__picture">
             <source srcset="assets/hero-nobg.png" media="(min-width: 1024px)">
-            <img src="assets/hero_responsive_mobile.png" alt="Mozo utilizando la app de Pan Comido en el restaurante" class="hero__image">
+            <img src="assets/hero_responsive_mobile.png" alt="Mozo utilizando la app de Pan Comido en el restaurante" class="hero__image" fetchpriority="high">
           </picture>
         </div>
       </div>
@@ -312,6 +320,75 @@
               <h3 class="benefit-item__title">Experiencia moderna para el comensal</h3>
               <p class="benefit-item__text">Menú digital, pedidos y pagos desde el celular. Tu restaurante se siente actual y profesional.</p>
             </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Casos de éxito / Reseñas -->
+    <section id="casos-de-exito" class="section reviews" aria-labelledby="reviews-title">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="section-label">Casos de éxito</span>
+          <h2 id="reviews-title" class="section-title">Lo que dicen nuestros clientes</h2>
+          <p class="section-subtitle">
+            Restaurantes de todo el país ya están simplificando su día a día con Pan Comido.
+          </p>
+        </header>
+
+        <div class="reviews__grid">
+          <article class="review-card glass-card reveal reveal-stagger-1">
+            <div class="review-card__header">
+              <div class="review-card__avatar">
+                <img src="https://i.pravatar.cc/150?img=68" alt="Foto de Martín" width="48" height="48">
+              </div>
+              <div class="review-card__info">
+                <h3 class="review-card__name">Martín S.</h3>
+                <span class="review-card__role">Dueño de "La Esquina"</span>
+              </div>
+            </div>
+            <div class="review-card__stars">
+              ★★★★★
+            </div>
+            <p class="review-card__text">
+              "Desde que usamos Pan Comido, el caos de los fines de semana desapareció. Las comandas llegan directo a la cocina y los mozos están mucho más relajados. ¡Un viaje de ida!"
+            </p>
+          </article>
+
+          <article class="review-card glass-card reveal reveal-stagger-2">
+            <div class="review-card__header">
+              <div class="review-card__avatar">
+                <img src="https://i.pravatar.cc/150?img=47" alt="Foto de Valeria" width="48" height="48">
+              </div>
+              <div class="review-card__info">
+                <h3 class="review-card__name">Valeria G.</h3>
+                <span class="review-card__role">Encargada en "El Buen Sabor"</span>
+              </div>
+            </div>
+            <div class="review-card__stars">
+              ★★★★★
+            </div>
+            <p class="review-card__text">
+              "El control de stock en tiempo real es una maravilla. Antes nos enterábamos de que faltaba algo en pleno servicio, ahora el sistema nos avisa antes. Súper recomendable."
+            </p>
+          </article>
+
+          <article class="review-card glass-card reveal reveal-stagger-3">
+            <div class="review-card__header">
+              <div class="review-card__avatar">
+                <img src="https://i.pravatar.cc/150?img=11" alt="Foto de Diego" width="48" height="48">
+              </div>
+              <div class="review-card__info">
+                <h3 class="review-card__name">Diego F.</h3>
+                <span class="review-card__role">Chef en "Fuego y Brasas"</span>
+              </div>
+            </div>
+            <div class="review-card__stars">
+              ★★★★★
+            </div>
+            <p class="review-card__text">
+              "La cocina es otra desde que implementamos las comandas digitales. Los pedidos son claros, no hay malentendidos con los mozos y los tiempos de preparación mejoraron un montón."
+            </p>
           </article>
         </div>
       </div>

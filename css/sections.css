@@ -43,7 +43,11 @@
 
 .hero__title em {
   font-style: normal;
-  color: var(--color-primary);
+  background: linear-gradient(135deg, var(--color-primary) 0%, #ff5e62 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 }
 
 .hero__subtitle {
@@ -873,5 +877,69 @@
   .results__tooltip span {
     font-size: 0.7rem;
   }
+}
+
+/* ?? Reviews / Casos de éxito ?? */
+.reviews__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-lg);
+}
+
+.review-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  padding: var(--space-lg);
+}
+
+.review-card__header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.review-card__avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid var(--color-primary);
+}
+
+.review-card__avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.review-card__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.review-card__name {
+  font-weight: 700;
+  font-size: var(--text-body);
+  color: var(--color-text);
+  line-height: 1.2;
+}
+
+.review-card__role {
+  font-size: var(--text-caption);
+  color: var(--color-text-muted);
+}
+
+.review-card__stars {
+  color: #fbbf24;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+}
+
+.review-card__text {
+  font-size: 1rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+  font-style: italic;
 }
 

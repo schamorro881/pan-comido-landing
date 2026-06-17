@@ -63,26 +63,17 @@
     });
   });
 
-  /* ── Reveal on scroll ── */
-  const revealElements = document.querySelectorAll(".reveal");
-
-  if (revealElements.length && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("is-visible");
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
-    );
-
-    revealElements.forEach((el) => observer.observe(el));
-  } else {
-    revealElements.forEach((el) => el.classList.add("is-visible"));
+  /* ── Mouse Parallax for Hero ── */
+  const heroImage = document.querySelector(".hero__image");
+  if (heroImage && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    document.addEventListener("mousemove", (e) => {
+      const x = (window.innerWidth / 2 - e.clientX) * 0.02;
+      const y = (window.innerHeight / 2 - e.clientY) * 0.02;
+      heroImage.style.transform = `translate(${x}px, ${y}px)`;
+    });
   }
+
+  /* ── Reveal on scroll logic removed in favor of CSS animation-timeline ── */
 
   /* ── Demo form validation & submit ── */
   const validators = {
@@ -97,8 +88,8 @@
   function showFieldError(input, message) {
     const group = input.closest(".form-group");
     const errorEl = group?.querySelector(".form-error");
-    input.classList.toggle("is-invalid", Boolean(message));
-    input.setAttribute("aria-invalid", message ? "true" : "false");
+    // Removed manual class toggle in favor of CSS :user-invalid and custom validity
+    input.setCustomValidity(message || "");
     if (errorEl) errorEl.textContent = message || "";
   }
 
@@ -118,9 +109,12 @@
   }
 
   demoForm?.querySelectorAll("input, textarea").forEach((input) => {
-    input.addEventListener("blur", () => validateField(input));
+    input.addEventListener("blur", () => {
+      // Set a generic format error to trigger :user-invalid correctly if it's invalid
+      validateField(input);
+    });
     input.addEventListener("input", () => {
-      if (input.classList.contains("is-invalid")) validateField(input);
+      if (!input.checkValidity()) validateField(input);
     });
   });
 
