@@ -388,7 +388,7 @@
 .demo__wrapper {
   display: grid;
   gap: var(--space-2xl);
-  align-items: center;
+  align-items: start;
 }
 
 .demo__info {

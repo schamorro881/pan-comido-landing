@@ -48,6 +48,12 @@
     if (e.key === "Escape") closeMobileMenu();
   });
 
+  window.addEventListener("resize", () => {
+    if (window.innerWidth >= 768 && mobileMenu?.classList.contains("is-open")) {
+      closeMobileMenu();
+    }
+  });
+
   /* ── Smooth scroll for anchor links ── */
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener("click", (e) => {
