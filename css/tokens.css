@@ -6,15 +6,15 @@
   --color-primary-glow: rgba(216, 8, 28, 0.2);
 
   /* Colores de rol  Manual de marca Pan Comido */
-  --color-admin: #6abf3f;
-  --color-admin-dark: #559a32;
-  --color-admin-light: rgba(106, 191, 63, 0.15);
-  --color-cocina: #f7d627;
-  --color-cocina-dark: #c9ad1f;
-  --color-cocina-light: rgba(247, 214, 39, 0.15);
-  --color-mozo: #a8041a;
-  --color-mozo-dark: #860314;
-  --color-mozo-light: rgba(168, 4, 26, 0.15);
+  --color-admin: #D8081C;
+  --color-admin-dark: #A8041A;
+  --color-admin-light: rgba(216, 8, 28, 0.15);
+  --color-cocina: #F08F1A;
+  --color-cocina-dark: #C47210;
+  --color-cocina-light: rgba(240, 143, 26, 0.15);
+  --color-mozo: #02596C;
+  --color-mozo-dark: #024455;
+  --color-mozo-light: rgba(2, 89, 108, 0.15);
   
   --color-bg: #fdfdfd;
   --color-white: #ffffff;
@@ -27,27 +27,27 @@
   --font-display: "Fredoka", sans-serif;
   --font-body: "Nunito", sans-serif;
 
-  --text-display: clamp(2.5rem, 5vw, 4rem);
-  --text-h1: clamp(1.8rem, 3.5vw, 2.5rem);
-  --text-h2: clamp(1.25rem, 2.5vw, 1.75rem);
-  --text-h3: 1.15rem;
-  --text-body: 0.95rem;
-  --text-caption: 0.8rem;
+  --text-display: clamp(2rem, 4vw, 3rem);
+  --text-h1: clamp(1.5rem, 3vw, 2.1rem);
+  --text-h2: clamp(1.1rem, 2vw, 1.5rem);
+  --text-h3: 1.05rem;
+  --text-body: 0.9rem;
+  --text-caption: 0.75rem;
 
   /* Espaciado */
-  --space-xs: 0.5rem;
-  --space-sm: 0.75rem;
-  --space-md: 1rem;
-  --space-lg: 1.5rem;
-  --space-xl: 2rem;
-  --space-2xl: 3rem;
-  --space-3xl: 4rem;
-  --space-4xl: 6rem;
+  --space-xs: 0.375rem;
+  --space-sm: 0.625rem;
+  --space-md: 0.875rem;
+  --space-lg: 1.25rem;
+  --space-xl: 1.75rem;
+  --space-2xl: 2.5rem;
+  --space-3xl: 3.5rem;
+  --space-4xl: 5rem;
 
   /* Radios Soft UI */
-  --radius-sm: 14px;
-  --radius-md: 24px;
-  --radius-lg: 32px;
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
   --radius-full: 9999px;
 
   /* Sombras Soft UI */
