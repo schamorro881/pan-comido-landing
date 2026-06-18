@@ -154,6 +154,14 @@ button {
   }
 }
 
+@media (max-width: 767px) {
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    animation: none !important;
+  }
+}
+
 .sr-only {
   position: absolute;
   width: 1px;

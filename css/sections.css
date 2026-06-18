@@ -94,8 +94,7 @@
 }
 
 .hero__img-wrap {
-  width: 130%;
-  margin-left: -10%;
+  width: 100%;
   border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow:
@@ -108,6 +107,13 @@
   height: auto;
   display: block;
   object-fit: cover;
+}
+
+@media (min-width: 1024px) {
+  .hero__img-wrap {
+    width: 130%;
+    margin-left: -10%;
+  }
 }
 .hero__mockup {
   padding: var(--space-xl);
@@ -267,6 +273,23 @@
 @media (prefers-reduced-motion: reduce) {
   .hero__float-chip {
     animation: none;
+  }
+}
+
+@media (max-width: 1023px) {
+  .hero {
+    min-height: auto;
+    padding-bottom: var(--space-2xl);
+  }
+
+  .hero__visual {
+    max-width: 480px;
+    margin-inline: auto;
+    padding-inline: var(--space-md);
+  }
+
+  .hero__deco {
+    display: none;
   }
 }
 
